@@ -1,0 +1,14 @@
+hydra:
+  dir: pass
+
+sweep:
+  dir: pass
+  subdir: pass
+
+env:
+  seed: 16
+  runtime: "cuda:0"
+
+defaults:
+  - dataset: pass
+  - model: pass
