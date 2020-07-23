@@ -1,16 +1,32 @@
 """
-    This file setup environment
+This file setup environment
 """
 
-import os
 import logging
+import os
 
+from dotenv import load_dotenv
 from omegaconf import DictConfig
+
+from src.base import configs_root, path_env_file
 
 logger = logging.getLogger()
 
+load_dotenv(dotenv_path=path_env_file)
 
-def setup_environment(cfg_env: DictConfig):
+if "ENV" in os.environ:
+    hydra_config_path = str(configs_root.joinpath(
+        f"{os.environ['ENV']}.yaml"
+    ))
+    logging.info(f"[Environment] Hydra config path: {hydra_config_path}")
+else:
+    raise EnvironmentError(
+        f"[Environment] Environment type does not specified. "
+        f"Check {path_env_file}"
+    )
+
+
+def setup_runtime(cfg_env: DictConfig):
     """
     Setup runtime environment.
     Runtime options:
@@ -51,13 +67,3 @@ def setup_environment(cfg_env: DictConfig):
     logger.info(f"[Environment] Runtime: {device}")
 
     return device
-
-
-
-
-
-
-
-
-
-

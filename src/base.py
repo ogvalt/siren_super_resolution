@@ -1,5 +1,5 @@
 """
-    This file setup basic paths for current project
+This file setup basic paths for current project
 """
 
 import pathlib
@@ -12,6 +12,8 @@ project_root = path_current_file.parents[1]
 configs_root = project_root.joinpath("configs")
 data_root = project_root.joinpath("presets/data")
 logs_root = project_root.joinpath("presets/logs")
+
+path_env_file = project_root.joinpath(".env")
 
 sys.path.append(
     str(project_root)
