@@ -4,7 +4,8 @@
 - [x] try poetry  
 - [x] install hydra-core, catalyst, dotenv 
 - [x] build runtime based on Dockerfile 
-
+- [ ] launch experiment inside docker
+ 
 ### Install
 
 ### Dataset

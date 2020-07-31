@@ -1,4 +1,5 @@
-.PHONY: build_docker run_docker bash_docker stop_docker
+.PHONY: build_docker run_docker bash_docker stop_docker \
+		clean
 
 build_docker:
 	bash ./scripts/docker/build.sh
@@ -11,3 +12,6 @@ bash_docker:
 
 stop_docker:
 	bash ./scripts/docker/stop.sh
+
+clean:
+	bash ./scripts/clean.sh
