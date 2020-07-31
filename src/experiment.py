@@ -16,6 +16,7 @@ def experiments(cfg: DictConfig):
     device = setup_runtime(cfg.env)
 
     # TODO: Place experiment here
+    print(device)
 
 
 if __name__ == "__main__":
