@@ -1,18 +1,36 @@
 ## Siren super resolution
 
 ### ToDo:
+#### Environment setup
 - [x] try poetry  
 - [x] install hydra-core, catalyst, dotenv 
 - [x] build runtime based on Dockerfile 
-- [ ] launch experiment inside docker
+- [ ] launch experiment inside docker locally
+- [ ] launch experiment inside docker on cloud
+
+#### Experiment setup
+- [ ] download dataset, create script for dataset downloading 
+- [ ] script for training and storing training siren models
+- [ ] cnn for generating sirens from pictures
+- [ ] super - resolution experiment
+
+
+#### Serving
+- [ ] Separate Front-end (probably based on streamlit) 
+- [ ] Separate model back-end based on torch-serving
+- [ ] docker-compose.yaml to orchestrate them 
  
 ### Install
+1. Create `.env` file from `.env.example`:
+    -   check `$DOCKER_RUNTIME` for your specific docker runtime. 
+        Note: expected values corresponds to docker runtime command.
+  
 
 ### Dataset
 
 https://data.vision.ee.ethz.ch/cvl/DIV2K/
 
-## Known Issues
+### Known Issues
 
 1. Repo heavily rely on `pytorch`. 
 `pytorch` sync their release schedule with `CUDA` schedule.

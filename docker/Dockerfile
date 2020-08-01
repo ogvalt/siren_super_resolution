@@ -7,13 +7,17 @@ RUN apt-get update && \
          build-essential \
          cmake \
          ca-certificates \
+         git \
          curl \
          python3.8 \
          python3.8-dev \
          python3.8-distutils \
+         # opencv requirements
          libglib2.0-0 \
-         && \
-    rm -rf /var/lib/apt/lists/*
+         libsm6 \
+         libxext6 \
+         libxrender-dev \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN ln -s /usr/bin/python3.8 /usr/local/bin/python3 \
     && ln -s /usr/bin/pydoc3.8 /usr/local/bin/pydoc3 \
