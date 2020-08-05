@@ -12,14 +12,14 @@ command -v busybox >/dev/null 2>&1 || { echo >&2 "I require busybox but it's not
 DEST="$(realpath "$PROJECT_PATH"presets/data/)"
 
 train_dest="$DEST"/LapSRN/train/ && mkdir -p "$train_dest"
-test_dest="$DEST"/LapSRN/train/ && mkdir -p "$test_dest"
+test_dest="$DEST"/LapSRN/test/ && mkdir -p "$test_dest"
 
 echo "Starting dataset download, saving into: ""$DEST"""
-wget -qO- http://vllab.ucmerced.edu/wlai24/LapSRN/results/SR_training_datasets.zip |
-    busybox unzip - -d "$DEST"/LapSRN/train/
+wget -O- http://vllab.ucmerced.edu/wlai24/LapSRN/results/SR_training_datasets.zip |
+    busybox unzip - -d "$train_dest"
 
 wget -qO- http://vllab.ucmerced.edu/wlai24/LapSRN/results/SR_testing_datasets.zip |
-    busybox unzip - -d "$DEST"/LapSRN/test/
+    busybox unzip - -d "$test_dest"
 
 
 
