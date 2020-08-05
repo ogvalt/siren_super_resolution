@@ -1,5 +1,5 @@
 .PHONY: build_docker run_docker bash_docker stop_docker \
-		clean
+		clean download_dataset
 
 build_docker:
 	bash ./scripts/docker/build.sh
@@ -15,3 +15,6 @@ stop_docker:
 
 clean:
 	bash ./scripts/clean.sh
+
+download_dataset:
+	bash ./scripts/download_dataset.sh
