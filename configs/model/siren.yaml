@@ -1,0 +1,8 @@
+model:
+  name: siren
+  parameters:
+    in_features: 2
+    out_features: 1
+    hidden_features: 256
+    hidden_layers: 3
+    outermost_linear: true

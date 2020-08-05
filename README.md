@@ -5,8 +5,8 @@
 - [x] try poetry  
 - [x] install hydra-core, catalyst, dotenv 
 - [x] build runtime based on Dockerfile 
-- [ ] launch experiment inside docker locally
-- [ ] launch experiment inside docker on cloud
+- [x] launch environment inside docker locally
+- [x] launch environment inside docker on cloud
 
 #### Experiment setup
 - [ ] download dataset, create script for dataset downloading 
