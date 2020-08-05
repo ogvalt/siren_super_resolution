@@ -9,7 +9,7 @@
 - [x] launch environment inside docker on cloud
 
 #### Experiment setup
-- [ ] download dataset, create script for dataset downloading 
+- [x] download dataset, create script for dataset downloading 
 - [ ] script for training and storing training siren models
 - [ ] cnn for generating sirens from pictures
 - [ ] super - resolution experiment
@@ -28,7 +28,8 @@
 
 ### Dataset
 
-https://data.vision.ee.ethz.ch/cvl/DIV2K/
+Took from here http://vllab.ucmerced.edu/wlai24/LapSRN/
+# TODO: Dow 
 
 ### Known Issues
 
@@ -57,3 +58,30 @@ pip install torch==1.6.0+cu101 \
             -f https://download.pytorch.org/whl/torch_stable.html
 # for cuda 10.1 version 
 ```  
+
+### Citation
+```
+@inproceedings{sitzmann2019siren,
+    author = {Sitzmann, Vincent
+              and Martel, Julien N.P.
+              and Bergman, Alexander W.
+              and Lindell, David B.
+              and Wetzstein, Gordon},
+    title = {Implicit Neural Representations
+              with Periodic Activation Functions},
+    booktitle = {arXiv},
+    year={2020}
+}
+@inproceedings{LapSRN,
+    author    = {Lai, Wei-Sheng and Huang, Jia-Bin and Ahuja, Narendra and Yang, Ming-Hsuan}, 
+    title     = {Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution}, 
+    booktitle = {IEEE Conference on Computer Vision and Pattern Recognition},
+    year      = {2017}
+}
+@article{MSLapSRN,
+    author    = {Lai, Wei-Sheng and Huang, Jia-Bin and Ahuja, Narendra and Yang, Ming-Hsuan}, 
+    title     = {Fast and Accurate Image Super-Resolution with Deep Laplacian Pyramid Networks}, 
+    journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+    year      = {2018}
+}
+```
