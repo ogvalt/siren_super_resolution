@@ -16,7 +16,6 @@ RUN apt-get update && \
          libglib2.0-0 \
          libsm6 \
          libxext6 \
-         libgl1-mesa-glx \
          libxrender-dev \
     && rm -rf /var/lib/apt/lists/*
 
