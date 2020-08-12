@@ -2,6 +2,8 @@
 File with experiments
 """
 
+import os
+
 import hydra
 from omegaconf import DictConfig
 
@@ -15,8 +17,9 @@ def experiments(cfg: DictConfig):
     """
     device = setup_runtime(cfg.env)
 
-    # TODO: Place experiment here
-    print(device)
+    from src.experiments.train import train
+
+    train(device, cfg)
 
 
 if __name__ == "__main__":

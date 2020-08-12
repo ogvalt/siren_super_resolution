@@ -9,7 +9,8 @@
 - [x] launch environment inside docker on cloud
 
 #### Experiment setup
-- [x] download dataset, create script for dataset downloading 
+- [x] download dataset, create script for dataset downloading
+- [ ] dataset iterator 
 - [ ] script for training and storing training siren models
 - [ ] cnn for generating sirens from pictures
 - [ ] super - resolution experiment
@@ -29,7 +30,6 @@
 ### Dataset
 
 Took from here http://vllab.ucmerced.edu/wlai24/LapSRN/
-# TODO: Dow 
 
 ### Known Issues
 
@@ -43,10 +43,13 @@ version in your runtime environment and installed `pytorch`.
 Fixes: 
 ```
 # check docker/Dockerfile
+
 FROM nvidia/cuda:10.2-cudnn7-devel-ubuntu18.04
-# to e.g.
+
+# set it to proper version of cuda,
+# for example to:
+
 FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
-# set it to proper version of cuda
 
 # or
 

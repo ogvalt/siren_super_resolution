@@ -20,7 +20,7 @@ class ModelsRegistry(Registry):
     ) -> None:
         super().register(name=name, user_type=model)
 
-    def __call__(self, cfg: DictConfig):
+    def __call__(self, cfg: DictConfig) -> nn.Module:
         name = cfg.get("name")
         parameters = cfg.get("parameters")
 

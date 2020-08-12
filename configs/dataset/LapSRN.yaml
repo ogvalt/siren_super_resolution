@@ -1,0 +1,10 @@
+dataset:
+  name: "LapSRN"
+  parameters:
+    paths:
+      train:
+        - presets/data/LapSRN/train
+        - ["png", ]
+      test:
+        - presets/data/LapSRN/test
+        - ["png", ]
