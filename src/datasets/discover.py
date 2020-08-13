@@ -4,7 +4,7 @@ from typing import Mapping
 from omegaconf import DictConfig
 
 from src.base import project_root
-from src.core.dataset import Dataset
+from core.dataset.dataset import Dataset
 
 
 def search_all_files_by_extension(

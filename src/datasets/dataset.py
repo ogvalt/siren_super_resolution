@@ -3,7 +3,7 @@ from typing import Callable
 from omegaconf import DictConfig
 
 from src.core.registry import Registry
-from src.core.dataset import Dataset
+from core.dataset.dataset import Dataset
 
 
 class DatasetRegistry(Registry):
