@@ -1,5 +1,5 @@
 from src.models import Models
-from src.dataset import Datasets
+from src.datasets import Datasets
 
 
 def train(device, cfg):

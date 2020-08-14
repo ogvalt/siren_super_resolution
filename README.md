@@ -1,16 +1,22 @@
 ## Siren super resolution
 
-### ToDo:
-#### Environment setup
+## ToDo:
+### Environment setup
 - [x] try poetry  
 - [x] install hydra-core, catalyst, dotenv 
 - [x] build runtime based on Dockerfile 
 - [x] launch environment inside docker locally
 - [x] launch environment inside docker on cloud
 
-#### Experiment setup
+### Experiment setup
 - [x] download dataset, create script for dataset downloading
-- [ ] dataset iterator 
+
+#### Dataset
+- [ ] dataset architecture
+- [ ] simple dataset iterator
+- [x] super - resolution dataset iterator
+
+#### Training
 - [ ] script for training and storing training siren models
 - [ ] cnn for generating sirens from pictures
 - [ ] super - resolution experiment

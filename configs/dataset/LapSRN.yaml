@@ -1,7 +1,8 @@
 dataset:
   name: "LapSRN"
-  type: "super-resolution"
   parameters:
+#    type: "super-resolution"
+    type: "coord2pixel"
     paths:
       train:
         - presets/data/LapSRN/train

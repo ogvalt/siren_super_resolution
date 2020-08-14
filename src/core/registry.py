@@ -13,7 +13,7 @@ class Registry:
             user_type: object
     ) -> None:
         if name in self.named_registry.keys():
-            msg: str = f"[{self.__name__}] model {name} already registered"
+            msg: str = f"[{self.__name__}] user_type {name} already registered"
             if suppress_errors:
                 raise RuntimeWarning(msg)
             else:
